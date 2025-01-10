@@ -144,7 +144,7 @@ After data cleaning and data manipulation, my data has 4084229 rows which means 
 The first ride started on 11/01/2023 and the last ride ended on 10/31/2024.
 
 ### Average ride time
-![image](https://github.com/user-attachments/assets/57a039bb-71da-43d6-babd-3dc0d68d1b55)
+![image](https://github.com/user-attachments/assets/d1dacd61-cdba-4ebb-a7f0-519bd5509aa1)
 
 The average ride time across all riders is 15.8 minutes. The members had an average of 12.1 minutes and the casual riders had an average of 22.5 minutes. The casual riders ride on average almost twice as long as the members.
 
@@ -166,8 +166,6 @@ The average ride time for members stays quite steady throughout the hours of the
 ![image](https://github.com/user-attachments/assets/c910303d-f644-4076-a6f7-3648289c0c20)
 
 ![image](https://github.com/user-attachments/assets/39e1056d-8e31-44ab-813a-8fc9d8320130)
-
-![image](https://github.com/user-attachments/assets/8474bc44-11be-4d9e-a1f9-bf6491f49dd5)
 
 The three most frequent stations are the same if we look at start stations and end stations. For members those stations are “Kingsbury St & Kinzie St”, “Clinton St & Washington Blvd” and “Clinton St & Madison St”. The three most frequent stations for casual riders are “Streeter Dr & Grand Ave”, “DuSable Lake Shore Dr & Monroe St” and “Michigan Ave & Oak St”. After a quick analysis using a map, I can see that the stations used by members are close to the center of the city, and thus, close to workplaces and commercial areas. The stations that are the most used by casual riders are close to the sea side of the city where parks are.
 
