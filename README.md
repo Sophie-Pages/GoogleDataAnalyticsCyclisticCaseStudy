@@ -30,7 +30,229 @@ Lily Moreno has set a clear goal to the marketing analytics team: to design a ne
 
 Before making recommendations, the marketing analytics team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. The Cyclistic historical bike trip data will be analysed to identify trends.
 
+## Ask phase
+*The Ask phase is the problem defining phase. It is when you define the problem you’re trying to solve. You also need to make sure you understand who the stakeholders are, and what their expectations are.*
 
+### Information
+Lily Moreno has assigned this question for us to answer: how do annual members and casual riders use Cyclistic bikes differently?
+
+### Business task
+*A business task corresponds to the question or problem to be solved by data analysis for a business.*
+
+In our case, our business task is to understand how annual members and casual riders use Cyclistic bikes in order to design a new marketing strategy to convert casual riders into annual members.
+
+### Key stakeholders
+Our key stakeholders are Lily Moreno -our manager and the director of marketing- and the Cyclistic executive team that will decide whether or not to approve the recommended marketing program.
+
+## Prepare phase
+*The Prepare phase is the data collection phase. It is the time to decide what data needs to be collected in order to answer your questions. It is also the time to learn more about your data and to organise it to make it useful.*
+
+### The data
+The bike trip data is stored in a S3 bucket and can be collected [here](https://divvy-tripdata.s3.amazonaws.com/index.html). This is public data made available by Motivate International Inc. under this [license](https://divvybikes.com/data-license-agreement). It is first party data which means it has been collected by Cyclistic using their own resources. It is external data as it is available publicly.
+
+The data is structured and it is organized into CSV files that go from 2013 to October 2024. This is wide data as every data subject has a single row with multiple columns to hold the different values of its attributes.
+
+We have been requested to use only the last 12 months of data. Those last months are enough to gather relevant information and make recommendations. But, if we or the stakeholders wanted, we could review the data of the last few years to gather even more information about users and trends.
+
+### Limitations of the data
+The data has been anonymised which means any Personally Identifiable Information (PII) has been removed to ensure the identity of the users are protected. 
+
+Due to the anonymisation process, we will not be able to know which rides are single-ride or full-day passes. The users who purchased these passes are referred to as casual riders without distinction.
+
+We have no information about the circumstances of the trip: was it for work, leisure, or other? We have as well no information about where the users live and if it is close to the stations. 
+
+Due to those limitations, I recommend to the stakeholders an anonymous survey where we could ask these type of questions and much more:
+Are you an annual member? 
+ 		🔲 Yes
+    🔲 No, I mostly use full-day passes
+    🔲 No, I mostly use single-ride passes
+    🔲 No, I use full-day passes and single-ride passes equally
+Why do you usually use Cyclistic? 
+    🔲 To go to work
+    🔲 For leisure
+    🔲 To do sport
+    🔲 Other
+Where is the closest station from your home? 
+    🔲 Less than 5 min
+    🔲 Between 5 and 15 min
+    🔲 More than 15 min
+Where is the closest station from your workplace?
+    🔲 less than 5 min
+    🔲 between 5 and 15 min
+    🔲 more than 15 min
+
+### Data responsibility
+*Before you work with data, you must confirm that it is unbiased and credible. After all, if you start your analysis with unreliable data, you won’t be able to trust your results. - Google Data Analytics Course*
+
+The data doesn’t seem to have any issue regarding bias or credibility as it is Cyclistic that collected the data of all the trips in the city of Chicago. Nevertheless, I need to keep bias and fairness on top of my mind to keep an open mind and to not create any bias.
+
+Does the data ROCCC?
+R - reliable: it is accurate and unbiased.
+O - original: it is original and we know the origin of the data.
+C - comprehensive: it is comprehensive but there is about 1/5 of the data that has some missing fields such as start station name, start station id, end station name, and end station id. 
+C - current: it is current and I could use the last 12 months of data.
+C - cited: it is cited and we know who created it.
+
+### Data transformation
+All the data transformation steps I took can be found in my Jupyter Notebook **link: to be added**. 
+
+Documentation of the data collection and data transformation steps:
+* Verify that I can access and read the downloaded files
+* Verify that each file has the same number of columns, column names and types
+* Import the files into one
+* Remove columns I don’t plan on using
+* Rename some unclear column names
+
+## Process
+*The Process phase is the cleaning phase. It is the time to clean your data to get rid of any possible errors, inaccuracies, or inconsistencies.*
+
+For this project, I cleaned my data using Python in a Jupyter notebook. 
+
+### Documentation of data cleaning and data manipulation steps:
+* Check if any row has a ride_id that doesn't have the right length
+* Check duplicates
+  * Check if there are duplicate rows across all columns
+  * Check if there are duplicate rows across specific columns
+  * Duplicates found: ride_id should have unique values
+  * Understand why there are duplicates and delete the appropriate rows
+* Check the numbers of null values per columns and delete the appropriate rows
+* Check bike_type and membership_type unique values
+* Manage the timestamps
+  * Create start_day, start_time, end_day and end_time
+  * Add the day of the week
+  * Add the month
+  * Remove rows where start_time and end_time are the same
+  * Remove rows where start_day and end_day are not the same
+* Calculate the ride duration
+* Download my dataframe in CSV to import it into Tableau
+
+## Analyse and Share phase
+*The Analyse phase is when you do your data analysis: you organize, format, and aggregate the data to gain insights. Data calculations can also help you explore your data further.*
+
+*The Share phase is show time! It is about showing your summarised results with clear and enticing visuals. This is when you can demonstrate to the stakeholders that you have solved their problem and explain how you got there.*
+
+When working on this case study, I mostly used visualisations to do the analysis phase. Because of this, I will be showing my analysis steps with those visualisations. 
+
+**_Note:_** Be aware that this is an in depth analysis. If I were to show my analysis results to the stakeholders, I would do a summarised presentation of these steps or share my Dashboard that can be found in Tableau at the [Cyclistic Case Study Dashboard](https://public.tableau.com/app/profile/sophie.pages/viz/GoogleDataAnalyticsDashboardofCyclisticcasestudy/Dashboard3).
+
+### Overview
+After data cleaning and data manipulation, my data has 4084229 rows which means 4084229 trips. About 64% of these trips were done by members. 
+
+The first ride started on 11/01/2023 and the last ride ended on 10/31/2024.
+
+### Average ride time
+The average ride time across all riders is 15.82 minutes. The members had an average of 12.13 minutes and the casual riders had an average of 22.45 minutes. The casual riders ride on average almost twice as long as the members.
+
+My assumption is that members are located close to their workplaces and mostly use Cyclistic to go to work and go back home. Casual riders on the other hand use it mostly for leisure or to do sport. I will try to confirm or infirm my assumption with my analysis.
+
+The average ride time for members stays quite steady throughout the hours of the day, weeks and months. On the other hand, casual riders have a significant growth in ride time between 10am and 12pm, on Saturdays and Sundays, and in the summer months. 
+
+### Frequent stations
+The two most frequent stations for members were “Kingsbury St & Kinzie St” and “Clinton St & Washington Blvd”. The two most frequent stations for members were “Streeter Dr & Grand Ave” and “DuSable Lake Shore Dr & Monroe St”. After a quick analysis using a map, I can see that the two stations used by members are close to the center of the city, and thus, close to workplaces and commercial areas. The two stations that are the most used by casual riders are close to the sea side of the city where parks are.
+
+### Vehicle type
+There are three types of vehicles in the data I collected: electric bike, classic bike and electric scooter. However, in the information provided to me, Cyclistic is said to use reclining bikes, hand tricycles, and cargo bikes. Either that information is outdated or the assistive options are not clearly identified in the dataset. If the information is missing from our dataset or if it was removed during the anonymisation process, we could add a question asking if the users use our assistive bikes in the anonymous survey I proposed to the stakeholders.
+
+The most used type of vehicle is the classic bike for both members and casual riders, followed by the electric bike, and by the electric scooter. 
+
+### Number of rides
+Two thirds of the total number of rides were done by members and one third by casual riders. Either the members are more diligent and ride more often or there are just more members than casual riders or both. Due to the anonymisation process, we have no way of knowing without doing a survey.  My assumption is that there are more members than casual riders and they are more diligent as well.
+
+#### By hour
+Note: For the clarity of the visualisation, the number of rides have been aggregated by hour of the day. For example, all the rides that started between 8am and 8:59am will be counted in the 8am peak number. 
+
+If we look at the number of rides per hour of the day for members, we can see that there are two peaks with a first one between 7-9am and an even bigger one between 4-6pm. For casual riders however, there is only one peak between 4-6pm. We can assume that casual riders use Cyclistic after their work hours to do some activities and visit the parks that we previously mentioned. 
+
+#### By day of the week
+The days of the week that have the highest number of rides for members are Wednesday and Thursday whereas it is Saturday and Sunday for casual riders.
+
+The days of the week that have the lowest number of rides for members are Saturday and Sunday whereas it is Monday and Tuesday for casual riders.
+
+#### By month
+The month where we can see the highest number of rides for members is September whereas it is July for casual members.
+
+The month that has the lowest numbers of rides for both members and casual riders is January.
+
+#### By season
+If we take a look at the heat map, we have the highest number of rides in the Summer and the lowest in the Winter for both members and casual riders.
+
+### Summarised results
+Let’s go back to the question that was assigned to me: “How do annual members and casual riders use Cyclistic bikes differently? “.
+
+Because we want to convert casual rides into members, we will focus on what makes the casual riders different from the members.
+
+Casual riders:
+* Have an average ride time that is almost twice the one of the members.
+* Have a peak of average ride time from 10am to 2pm.
+* Have the longest ride time and number of rides during the week-end.
+* Have their most frequent stations close to the sea side and parks
+
+Members:
+* Have half the average ride time of the casual riders.
+* Have a stable average ride time throughout the day.
+* Have a peak of numbers of rides between 7am-9am that casual riders don’t have.
+* Have the most rides on Wednesday and Thursdays
+* Have their most frequent stations close to the center of the city, and thus, close to workplaces and commercial area
+
+All these observations confirm my first assumption that members mostly use Cyclistic to go to work and go back home while casual riders on the other hand use it mostly for leisure or to do sport.
+
+### Documentation of the visualisations
+Not all visualisations have made it to my final dashboard. You can find below the full list of visualisations I made during my analysis process:
+* Tables
+  * Total number of rides
+  * Average ride time
+  * Average ride time by membership type
+  * Average ride time by ride type 
+  * Most used start stations across all users
+  * Most used end stations across all users
+  * Most used start stations per membership type
+  * Most used end stations per membership type
+* Pie chart
+  * Number of rides by membership type
+  * Number of rides by ride type
+* Bar chart
+  * Number of rides by ride type
+* Line chart
+**_Note:_** These line charts could be replaced by bar charts but I personally find the line chart more clear.
+  * Number of rides by hour of the day
+  * Number of rides by day of the week 
+  * Number of rides by month
+  * Average ride time by hour of the day 
+  * Average ride time by day of the week
+  * Average ride time by month
+* Heat map
+  * Number of rides by day of the week and by month
+  * Number of rides by day of the week and by month per membership type
+  * Number of rides by day of the week and by season
+  * Number of rides by day of the week and by season per membership type
+  * Average ride time by day of the week and by month
+  * Average ride time by day of the week and by month per membership type
+  * Average ride time by day of the week and by season per membership type 
+
+## Act 
+*The Act phase is the time to act on your data. This is when you gather everything that has been learned from your data analysis and put it to use. This usually means providing recommendations to the stakeholders to ensure that they can make data-driven decisions.*
+
+### Recommendations
+The stakeholders have asked for my top three recommendations based on my analysis.
+
+#### Health benefits
+Because casual riders seem to be using Cyclistic mostly for leisure or sport. To appeal to the casual riders, I recommend a marketing campaign focusing on the health benefits of doing exercise and riding bikes. To make the casual riders want to switch to a membership, the campaign should clearly communicate the benefits of purchasing a membership. One of the reasons could be health benefits due to the members being more diligent with their rides. 
+
+#### Discount
+Because casual riders tend to ride bikes during summer months, I recommend a marketing campaign proposing a discount to start an annual membership during that period. 
+
+#### New membership
+Understanding why casual riders have not switched to an annual membership would be ideal in order to create an effective marketing campaign. With the data that was provided, it is not something that I can deduct easily but I can still make an hypothesis. 
+
+I recommend doing the survey that I talked about previously to understand the reasons why they have not switched to an annual membership. My hypothesis is that they want to have the opportunity to use their bikes for longer than 45 minutes. If my hypothesis is verified after doing the survey, I recommend that we create a new membership. We could have the first 3 hours for free like for the day passes or we could lift the limitation only during the week-end.
+
+#### Marketing campaign ideas
+As casual riders mostly ride during the week-ends, the marketing campaign should target Saturdays and Sundays if they plan to use advertising posters. Those advertising posters should be close to the most frequent stations used by casual riders.
+
+Using social media is a must nowadays. Because casual riders are already using Cyclistic, they could be interested in content relating to bikes, health benefits, sport, best places to use Cyclistic, etc. If Cyclistic grows its social media, casual riders will continue to hear about them throughout the months -thus keeping them interested in using Cyclistic- and see the marketing campaign when it launches.
+
+#### Additional idea
+We came to the conclusion that casual riders are active people interested in doing sport or leisure activities. Cylistic could do partnerships with sport events or gyms to continue to appeal to casual riders and as well appeal to those that haven’t heard about them before.
 
 
 
