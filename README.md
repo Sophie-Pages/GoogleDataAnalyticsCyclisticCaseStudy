@@ -145,55 +145,71 @@ The first ride started on 11/01/2023 and the last ride ended on 10/31/2024.
 
 ### Average ride time
 ![image](https://github.com/user-attachments/assets/57a039bb-71da-43d6-babd-3dc0d68d1b55)
+
 The average ride time across all riders is 15.8 minutes. The members had an average of 12.1 minutes and the casual riders had an average of 22.5 minutes. The casual riders ride on average almost twice as long as the members.
 
 My assumption is that members are located close to their workplaces and mostly use Cyclistic to go to work and go back home. Casual riders on the other hand use it mostly for leisure or to do sport. I will try to confirm or infirm my assumption with my analysis.
 
-![image](https://github.com/user-attachments/assets/c8c5597b-29e4-46a5-b5e0-ad9a0c653f16)
-![image](https://github.com/user-attachments/assets/fbad5770-2fd2-4de5-8ac9-a6d7933d13c3)
-![image](https://github.com/user-attachments/assets/02ff2a19-84db-4a4f-93d4-4498d04dbc88)
-![image](https://github.com/user-attachments/assets/41fc23f4-413a-44b8-875f-57b722334fc0)
+![image](https://github.com/user-attachments/assets/b51ebaa4-4902-4fb8-be9a-bbefac4c2e1f)
+
+![image](https://github.com/user-attachments/assets/65594f95-5d4e-4c0b-8321-d890486752e2)
+
+![image](https://github.com/user-attachments/assets/1e72d839-bc33-4810-8360-fb287a9dc95e)
+
+![image](https://github.com/user-attachments/assets/d231e181-de26-4b35-b1f4-d4040d415014)
+
+
 
 The average ride time for members stays quite steady throughout the hours of the day, weeks and months. On the other hand, casual riders have a significant growth in ride time between 10am and 12pm, on Saturdays and Sundays, and in the summer months. 
 
 ### Frequent stations
 ![image](https://github.com/user-attachments/assets/c910303d-f644-4076-a6f7-3648289c0c20)
+
 ![image](https://github.com/user-attachments/assets/39e1056d-8e31-44ab-813a-8fc9d8320130)
+
 ![image](https://github.com/user-attachments/assets/8474bc44-11be-4d9e-a1f9-bf6491f49dd5)
 
 The three most frequent stations are the same if we look at start stations and end stations. For members those stations are “Kingsbury St & Kinzie St”, “Clinton St & Washington Blvd” and “Clinton St & Madison St”. The three most frequent stations for casual riders are “Streeter Dr & Grand Ave”, “DuSable Lake Shore Dr & Monroe St” and “Michigan Ave & Oak St”. After a quick analysis using a map, I can see that the stations used by members are close to the center of the city, and thus, close to workplaces and commercial areas. The stations that are the most used by casual riders are close to the sea side of the city where parks are.
 
 ### Vehicle types
 ![image](https://github.com/user-attachments/assets/6bf878ab-cdac-4f5a-8f0e-3020006f70de)
+
 ![image](https://github.com/user-attachments/assets/a09daab2-c5ee-4f0d-8526-a1beef24623a)
+
 There are three types of vehicles in the data I collected: electric bike, classic bike and electric scooter. However, in the information provided to me, Cyclistic is said to use reclining bikes, hand tricycles, and cargo bikes. Either that information is outdated or the assistive options are not clearly identified in the dataset. If the information is missing from our dataset or if it was removed during the anonymisation process, we could add a question asking if the users use our assistive bikes in the anonymous survey I proposed to the stakeholders.
 
 The most used type of vehicle is the classic bike for both members and casual riders, followed by the electric bike, and by the electric scooter. 
 
 ### Number of rides
 ![image](https://github.com/user-attachments/assets/b020b860-2e21-4429-a0bb-5a5c7947de5b)
+
 Two thirds of the total number of rides were done by members and one third by casual riders. Either the members are more diligent and ride more often or there are just more members than casual riders or both. Due to the anonymisation process, we have no way of knowing without doing a survey.  My assumption is that there are more members than casual riders and they are more diligent as well.
 
 #### By hour
-![image](https://github.com/user-attachments/assets/e1e52e72-9221-4b48-ae50-0c47affa6ff0)
+![image](https://github.com/user-attachments/assets/9121cdb1-a3bd-4905-a644-278de6ee3f43)
+
 **_Note:_** For the clarity of the visualisation, the number of rides have been aggregated by hour of the day. For example, all the rides that started between 8am and 8:59am will be counted in the 8am peak number. 
 
 If we look at the number of rides per hour of the day for members, we can see that there are two peaks with a first one between 7-9am and an even bigger one between 4-6pm. For casual riders however, there is only one peak between 4-6pm. We can assume that casual riders use Cyclistic after their work hours to do some activities and visit the parks that we previously mentioned. 
 
 #### By day
-![image](https://github.com/user-attachments/assets/5c487605-b0e3-434b-a90d-b58de7316c73)
+![image](https://github.com/user-attachments/assets/d5969e15-bc6d-40e3-bad5-f26d965d52fb)
+
 The days that have the highest number of rides for members are Wednesday and Thursday whereas it is Saturday and Sunday for casual riders.
 
 The days that have the lowest number of rides for members are Saturday and Sunday whereas it is Monday and Tuesday for casual riders.
 
 #### By month
-![image](https://github.com/user-attachments/assets/c9f7c080-6e21-43c5-8ee1-7a45d6b3084f)
+![image](https://github.com/user-attachments/assets/3f29e954-45ea-4e6d-90eb-de8ca47a5c8e)
+
+
 The month where we can see the highest number of rides for members is September whereas it is July for casual members.
 
 The month that has the lowest numbers of rides for both members and casual riders is January.
 
 #### By season
-![image](https://github.com/user-attachments/assets/600c945c-7c78-40e1-9475-da8f47383c18)
+![image](https://github.com/user-attachments/assets/bdc38454-6057-4b36-8f67-6fd4b330e4dd)
+
 If we take a look at the heat map, we have the highest number of rides in the Summer and the lowest in the Winter for both members and casual riders.
 
 ### Summarised results
