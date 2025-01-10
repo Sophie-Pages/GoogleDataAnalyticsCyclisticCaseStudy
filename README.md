@@ -144,16 +144,22 @@ After data cleaning and data manipulation, my data has 4084229 rows which means 
 The first ride started on 11/01/2023 and the last ride ended on 10/31/2024.
 
 ### Average ride time
-The average ride time across all riders is 15.82 minutes. The members had an average of 12.13 minutes and the casual riders had an average of 22.45 minutes. The casual riders ride on average almost twice as long as the members.
+The average ride time across all riders is 15.8 minutes. The members had an average of 12.1 minutes and the casual riders had an average of 22.5 minutes. The casual riders ride on average almost twice as long as the members.
 
 My assumption is that members are located close to their workplaces and mostly use Cyclistic to go to work and go back home. Casual riders on the other hand use it mostly for leisure or to do sport. I will try to confirm or infirm my assumption with my analysis.
 
 The average ride time for members stays quite steady throughout the hours of the day, weeks and months. On the other hand, casual riders have a significant growth in ride time between 10am and 12pm, on Saturdays and Sundays, and in the summer months. 
 
 ### Frequent stations
-The three most frequent stations for members are “Kingsbury St & Kinzie St”, “Clinton St & Washington Blvd” and “Clinton St & Madison St”. The three most frequent stations for members are “Streeter Dr & Grand Ave”, “DuSable Lake Shore Dr & Monroe St” and “Michigan Ave & Oak St”. After a quick analysis using a map, I can see that the stations used by members are close to the center of the city, and thus, close to workplaces and commercial areas. The stations that are the most used by casual riders are close to the sea side of the city where parks are.
+![image](https://github.com/user-attachments/assets/c4b17d19-6f26-46d2-9ad4-b79a7ce67e0e)
+![image](https://github.com/user-attachments/assets/638840e8-8c46-4ac8-8dc7-c211db14e119)
+
+The three most frequent stations are the same if we look at start stations and end stations. For members those stations are “Kingsbury St & Kinzie St”, “Clinton St & Washington Blvd” and “Clinton St & Madison St”. The three most frequent stations for casual riders are “Streeter Dr & Grand Ave”, “DuSable Lake Shore Dr & Monroe St” and “Michigan Ave & Oak St”. After a quick analysis using a map, I can see that the stations used by members are close to the center of the city, and thus, close to workplaces and commercial areas. The stations that are the most used by casual riders are close to the sea side of the city where parks are.
 
 ### Vehicle types
+![image](https://github.com/user-attachments/assets/9f16155f-674c-482e-9f63-39177c9e6f17)
+![image](https://github.com/user-attachments/assets/f689d8a9-defc-4b0a-a693-ee4625222d58)
+
 There are three types of vehicles in the data I collected: electric bike, classic bike and electric scooter. However, in the information provided to me, Cyclistic is said to use reclining bikes, hand tricycles, and cargo bikes. Either that information is outdated or the assistive options are not clearly identified in the dataset. If the information is missing from our dataset or if it was removed during the anonymisation process, we could add a question asking if the users use our assistive bikes in the anonymous survey I proposed to the stakeholders.
 
 The most used type of vehicle is the classic bike for both members and casual riders, followed by the electric bike, and by the electric scooter. 
@@ -162,6 +168,8 @@ The most used type of vehicle is the classic bike for both members and casual ri
 Two thirds of the total number of rides were done by members and one third by casual riders. Either the members are more diligent and ride more often or there are just more members than casual riders or both. Due to the anonymisation process, we have no way of knowing without doing a survey.  My assumption is that there are more members than casual riders and they are more diligent as well.
 
 #### By hour
+![image](https://github.com/user-attachments/assets/9539e4bb-c070-41d3-acbb-7ec861ea69d4)
+
 **_Note:_** For the clarity of the visualisation, the number of rides have been aggregated by hour of the day. For example, all the rides that started between 8am and 8:59am will be counted in the 8am peak number. 
 
 If we look at the number of rides per hour of the day for members, we can see that there are two peaks with a first one between 7-9am and an even bigger one between 4-6pm. For casual riders however, there is only one peak between 4-6pm. We can assume that casual riders use Cyclistic after their work hours to do some activities and visit the parks that we previously mentioned. 
@@ -194,8 +202,8 @@ Members:
 * Have half the average ride time of the casual riders.
 * Have a stable average ride time throughout the day.
 * Have a peak of numbers of rides between 7am-9am that casual riders don’t have.
-* Have the most rides on Wednesday and Thursdays
-* Have their most frequent stations close to the center of the city, and thus, close to workplaces and commercial area
+* Have the most rides on Wednesday and Thursdays.
+* Have their most frequent stations close to the center of the city, and thus, close to workplaces and commercial area.
 
 All these observations confirm my first assumption that members mostly use Cyclistic to go to work and go back home while casual riders on the other hand use it mostly for leisure or to do sport.
 
@@ -203,7 +211,6 @@ All these observations confirm my first assumption that members mostly use Cycli
 Not all visualisations have made it to my final dashboard. 
 
 You can find below the full list of visualisations I made during my analysis process:
-**_Note:_** The line charts could be replaced by bar charts but I personally find the line chart more clear.
 * Tables
   * Total number of rides
   * Average ride time
@@ -233,6 +240,8 @@ You can find below the full list of visualisations I made during my analysis pro
   * Average ride time by day of the week and by month
   * Average ride time by day of the week and by month per membership type
   * Average ride time by day of the week and by season per membership type 
+
+**_Note:_** The line charts could be replaced by bar charts but I personally find the line chart more clear.
 
 ## Act 
 *The Act phase is the time to act on your data. This is when you gather everything that has been learned from your data analysis and put it to use. This usually means providing recommendations to the stakeholders to ensure that they can make data-driven decisions.*
