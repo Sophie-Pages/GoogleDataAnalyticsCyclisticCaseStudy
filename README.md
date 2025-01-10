@@ -63,23 +63,26 @@ We have no information about the circumstances of the trip: was it for work, lei
 
 Due to those limitations, I recommend to the stakeholders an anonymous survey where we could ask these type of questions and much more:
 Are you an annual member? 
- 		🔲 Yes
-    🔲 No, I mostly use full-day passes
-    🔲 No, I mostly use single-ride passes
-    🔲 No, I use full-day passes and single-ride passes equally
+ 🔲 Yes
+ 🔲 No, I mostly use full-day passes
+ 🔲 No, I mostly use single-ride passes
+ 🔲 No, I use full-day passes and single-ride passes equally
+
 Why do you usually use Cyclistic? 
-    🔲 To go to work
-    🔲 For leisure
-    🔲 To do sport
-    🔲 Other
+ 🔲 To go to work
+ 🔲 For leisure
+ 🔲 To do sport
+ 🔲 Other
+
 Where is the closest station from your home? 
-    🔲 Less than 5 min
-    🔲 Between 5 and 15 min
-    🔲 More than 15 min
+ 🔲 Less than 5 min
+ 🔲 Between 5 and 15 min
+ 🔲 More than 15 min
+
 Where is the closest station from your workplace?
-    🔲 less than 5 min
-    🔲 between 5 and 15 min
-    🔲 more than 15 min
+ 🔲 less than 5 min
+ 🔲 between 5 and 15 min
+ 🔲 more than 15 min
 
 ### Data responsibility
 *Before you work with data, you must confirm that it is unbiased and credible. After all, if you start your analysis with unreliable data, you won’t be able to trust your results. - Google Data Analytics Course*
@@ -133,7 +136,7 @@ For this project, I cleaned my data using Python in a Jupyter notebook.
 
 When working on this case study, I mostly used visualisations to do the analysis phase. Because of this, I will be showing my analysis steps with those visualisations. 
 
-**_Note:_** Be aware that this is an in depth analysis. If I were to show my analysis results to the stakeholders, I would do a summarised presentation of these steps or share my Dashboard that can be found in Tableau at the [Cyclistic Case Study Dashboard](https://public.tableau.com/app/profile/sophie.pages/viz/GoogleDataAnalyticsDashboardofCyclisticcasestudy/Dashboard3).
+**_Note:_** Be aware that this is an in depth analysis. If I were to show my analysis results to the stakeholders, I would do a summarised presentation of these steps or share my Dashboard that can be found in Tableau here: [Cyclistic Case Study Dashboard](https://public.tableau.com/app/profile/sophie.pages/viz/GoogleDataAnalyticsDashboardofCyclisticcasestudy/Dashboard3).
 
 ### Overview
 After data cleaning and data manipulation, my data has 4084229 rows which means 4084229 trips. About 64% of these trips were done by members. 
@@ -148,9 +151,9 @@ My assumption is that members are located close to their workplaces and mostly u
 The average ride time for members stays quite steady throughout the hours of the day, weeks and months. On the other hand, casual riders have a significant growth in ride time between 10am and 12pm, on Saturdays and Sundays, and in the summer months. 
 
 ### Frequent stations
-The two most frequent stations for members were “Kingsbury St & Kinzie St” and “Clinton St & Washington Blvd”. The two most frequent stations for members were “Streeter Dr & Grand Ave” and “DuSable Lake Shore Dr & Monroe St”. After a quick analysis using a map, I can see that the two stations used by members are close to the center of the city, and thus, close to workplaces and commercial areas. The two stations that are the most used by casual riders are close to the sea side of the city where parks are.
+The three most frequent stations for members are “Kingsbury St & Kinzie St”, “Clinton St & Washington Blvd” and “Clinton St & Madison St”. The three most frequent stations for members are “Streeter Dr & Grand Ave”, “DuSable Lake Shore Dr & Monroe St” and “Michigan Ave & Oak St”. After a quick analysis using a map, I can see that the stations used by members are close to the center of the city, and thus, close to workplaces and commercial areas. The stations that are the most used by casual riders are close to the sea side of the city where parks are.
 
-### Vehicle type
+### Vehicle types
 There are three types of vehicles in the data I collected: electric bike, classic bike and electric scooter. However, in the information provided to me, Cyclistic is said to use reclining bikes, hand tricycles, and cargo bikes. Either that information is outdated or the assistive options are not clearly identified in the dataset. If the information is missing from our dataset or if it was removed during the anonymisation process, we could add a question asking if the users use our assistive bikes in the anonymous survey I proposed to the stakeholders.
 
 The most used type of vehicle is the classic bike for both members and casual riders, followed by the electric bike, and by the electric scooter. 
@@ -159,7 +162,7 @@ The most used type of vehicle is the classic bike for both members and casual ri
 Two thirds of the total number of rides were done by members and one third by casual riders. Either the members are more diligent and ride more often or there are just more members than casual riders or both. Due to the anonymisation process, we have no way of knowing without doing a survey.  My assumption is that there are more members than casual riders and they are more diligent as well.
 
 #### By hour
-Note: For the clarity of the visualisation, the number of rides have been aggregated by hour of the day. For example, all the rides that started between 8am and 8:59am will be counted in the 8am peak number. 
+**_Note:_** For the clarity of the visualisation, the number of rides have been aggregated by hour of the day. For example, all the rides that started between 8am and 8:59am will be counted in the 8am peak number. 
 
 If we look at the number of rides per hour of the day for members, we can see that there are two peaks with a first one between 7-9am and an even bigger one between 4-6pm. For casual riders however, there is only one peak between 4-6pm. We can assume that casual riders use Cyclistic after their work hours to do some activities and visit the parks that we previously mentioned. 
 
@@ -197,7 +200,10 @@ Members:
 All these observations confirm my first assumption that members mostly use Cyclistic to go to work and go back home while casual riders on the other hand use it mostly for leisure or to do sport.
 
 ### Documentation of the visualisations
-Not all visualisations have made it to my final dashboard. You can find below the full list of visualisations I made during my analysis process:
+Not all visualisations have made it to my final dashboard. 
+
+You can find below the full list of visualisations I made during my analysis process:
+**_Note:_** The line charts could be replaced by bar charts but I personally find the line chart more clear.
 * Tables
   * Total number of rides
   * Average ride time
@@ -213,7 +219,6 @@ Not all visualisations have made it to my final dashboard. You can find below th
 * Bar chart
   * Number of rides by ride type
 * Line chart
-**_Note:_** These line charts could be replaced by bar charts but I personally find the line chart more clear.
   * Number of rides by hour of the day
   * Number of rides by day of the week 
   * Number of rides by month
