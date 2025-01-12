@@ -121,7 +121,7 @@ Using my initial to-do list that can be found in my Jupyter notebook, I created 
   * Add the month
   * Remove rows where start_time and end_time are the same
   * Remove rows where start_day and end_day are not the same
- * Check duplicates
+* Check duplicates
   * Check if there are duplicate rows across all columns
   * Check if there are duplicate rows across specific columns
   * Duplicates found: ride_id should have unique values
