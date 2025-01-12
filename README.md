@@ -171,7 +171,7 @@ The average ride time for members stays quite steady throughout the hours of the
 The three most frequent stations are the same if we look at start stations and end stations. For members, those stations are “Kingsbury St & Kinzie St”, “Clinton St & Washington Blvd” and “Clinton St & Madison St”. The three most frequent stations for casual riders are “Streeter Dr & Grand Ave”, “DuSable Lake Shore Dr & Monroe St” and “Michigan Ave & Oak St”. After a quick analysis using a map, I can see that the stations used by members are close to the center of the city, and thus, close to workplaces and commercial areas. The stations that are the most used by casual riders are close to the seaside of the city where parks are.
 
 ### Vehicle types
-![image](https://github.com/user-attachments/assets/633bf028-1c03-4790-b8f4-daab256ec4eb)
+![image](https://github.com/user-attachments/assets/ff706a40-b3c8-4706-adae-059c81ce69e6)
 
 ![image](https://github.com/user-attachments/assets/7ba855f9-4ced-4d4a-94b0-be602ba3487f)
 
@@ -180,7 +180,7 @@ There are three types of vehicles in the data I collected: electric bike, classi
 The most used type of vehicle is the classic bike for both members and casual riders, followed by the electric bike, and the electric scooter. 
 
 ### Number of rides
-![image](https://github.com/user-attachments/assets/b020b860-2e21-4429-a0bb-5a5c7947de5b)
+![image](https://github.com/user-attachments/assets/6ab1eb88-1b12-4a78-bcc2-00bfe812d5a8)
 
 Two-thirds of the total number of rides were done by members and one-third by casual riders. Either the members are more diligent and ride more often or there are just more members than casual riders or both. Due to the anonymisation process, we have no way of knowing without doing a survey.  My assumption is that there are more members than casual riders and they are more diligent as well.
 
