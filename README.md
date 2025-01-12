@@ -97,12 +97,12 @@ C - current: it is current and I could use the last 12 months of data.
 C - cited: it is cited and we know who created it.
 
 ### Data transformation
-All the data transformation steps I took can be found in my Jupyter Notebook **link: to be added**. 
+All the data transformation steps I took can be found in my Jupyter Notebook. 
 
 Documentation of the data collection and data transformation steps:
-* Verify that I can access and read the downloaded files
-* Verify that each file has the same number of columns, column names, and types
-* Import the files into one
+* Verify that I can access the downloaded files and create dataframes from them
+* Verify that each dataframe has the same number of columns, column names, and types
+* Import the datraframes into one
 * Remove columns I don’t plan on using
 * Rename some unclear column names
 
@@ -111,22 +111,25 @@ Documentation of the data collection and data transformation steps:
 
 For this project, I cleaned my data using Python in a Jupyter Notebook. 
 
-### Documentation of data cleaning and data manipulation steps:
-* Check if any row has a ride_id that doesn't have the right length
-* Check duplicates
-  * Check if there are duplicate rows across all columns
-  * Check if there are duplicate rows across specific columns
-  * Duplicates found: ride_id should have unique values
-  * Understand why there are duplicates and delete the appropriate rows
-* Check the number of null values per column and delete the appropriate rows
-* Check bike_type and membership_type unique values
+### Documentation of data cleaning and data manipulation steps
+Using my initial to-do list that can be found in my Jupyter notebook, I created a documentation of the data cleaning and data manipulation steps I took:
+* Verify bike_type unique values
+* Verify membership_type unique values
 * Manage the timestamps
-  * Create start_day, start_time, end_day and end_time
+  * Create the columns start_day, start_time, end_day and end_time
   * Add the day of the week
   * Add the month
   * Remove rows where start_time and end_time are the same
   * Remove rows where start_day and end_day are not the same
-* Calculate the ride duration
+ * Check duplicates
+  * Check if there are duplicate rows across all columns
+  * Check if there are duplicate rows across specific columns
+  * Duplicates found: ride_id should have unique values
+  * Understand why there are duplicates and delete the appropriate rows
+* Calculate the ride duration and create a column with the ride duration in minutes for easier data visualisations
+* Check if any row has a ride_id that doesn't have the right length
+* Check the number of null values per column and delete the appropriate rows
+
 * Download my dataframe in CSV to import it into Tableau
 
 ## Analyse and Share phase
