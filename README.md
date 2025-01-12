@@ -97,7 +97,7 @@ C - current: it is current and I could use the last 12 months of data.
 C - cited: it is cited and we know who created it.
 
 ### Data transformation
-All the data transformation steps I took can be found in my Jupyter Notebook. 
+All the data transformation steps I took can be found in my [Jupyter Notebook](https://github.com/Sophie-Pages/GoogleDataAnalyticsCyclisticCaseStudy/blob/main/Jupyter_Notebook/case_study.ipynb). 
 
 Documentation of the data collection and data transformation steps:
 * Verify that I can access the downloaded files and create dataframes from them
@@ -112,7 +112,7 @@ Documentation of the data collection and data transformation steps:
 For this project, I cleaned my data using Python in a Jupyter Notebook. 
 
 ### Documentation of data cleaning and data manipulation steps
-Using my initial to-do list that can be found in my Jupyter notebook, I created a documentation of the data cleaning and data manipulation steps I took:
+Using my initial to-do list that can be found in my [Jupyter Notebook](https://github.com/Sophie-Pages/GoogleDataAnalyticsCyclisticCaseStudy/blob/main/Jupyter_Notebook/case_study.ipynb), I created a documentation of the data cleaning and data manipulation steps I took:
 * Verify bike_type unique values
 * Verify membership_type unique values
 * Manage the timestamps
