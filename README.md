@@ -100,11 +100,11 @@ C - cited: it is cited and we know who created it.
 All the data transformation steps I took can be found in my [Jupyter Notebook](https://github.com/Sophie-Pages/GoogleDataAnalyticsCyclisticCaseStudy/blob/main/Jupyter_Notebook/case_study.ipynb). 
 
 Documentation of the data collection and data transformation steps:
-* Verify that I can access the downloaded files and create dataframes from them
-* Verify that each dataframe has the same number of columns, column names, and types
-* Import the datraframes into one
-* Remove columns I don’t plan on using
-* Rename some unclear column names
+* Verify that I can access the downloaded files and create dataframes from them.
+* Verify that each dataframe has the same number of columns, column names, and types.
+* Import the datraframes into one.
+* Remove columns I don’t plan on using.
+* Rename some unclear column names.
 
 ## Process
 *The Process phase is the cleaning phase. It is the time to clean your data to get rid of any possible errors, inaccuracies, or inconsistencies.*
@@ -115,7 +115,7 @@ For this project, I cleaned my data using Python in a Jupyter Notebook.
 Using my initial to-do list that can be found in my [Jupyter Notebook](https://github.com/Sophie-Pages/GoogleDataAnalyticsCyclisticCaseStudy/blob/main/Jupyter_Notebook/case_study.ipynb), I created a documentation of the data cleaning and data manipulation steps I took:
 * Verify bike_type unique values
 * Verify membership_type unique values
-* Manage the timestamps
+* Manage the timestamps.
   * Create the columns start_day, start_time, end_day and end_time
   * Add the day of the week
   * Add the month
@@ -147,9 +147,9 @@ After data cleaning and data manipulation, my data has 4084229 rows which means 
 The first ride started on 11/01/2023 and the last ride ended on 10/31/2024.
 
 ### Average ride time
-![image](https://github.com/user-attachments/assets/d1dacd61-cdba-4ebb-a7f0-519bd5509aa1)
+![image](https://github.com/user-attachments/assets/06c361ce-ecb8-40c1-aa6c-42f4bea03f79)
 
-The average ride time across all riders is 15.8 minutes. The members had an average of 12.1 minutes and the casual riders had an average of 22.5 minutes. The casual riders ride on average almost twice as long as the members.
+The average ride time across all riders is 16 minutes. The members had an average of 12 minutes and the casual riders had an average of 22 minutes. The casual riders ride on average almost twice as long as the members.
 
 My assumption is that members are located close to their workplaces and mostly use Cyclistic to go to work and go back home. Casual riders on the other hand use it mostly for leisure or to do sport. I will try to confirm or infirm my assumption with my analysis.
 
@@ -211,7 +211,7 @@ The month that has the lowest number of rides for both members and casual riders
 If we take a look at the heat map, we have the highest number of rides in the Summer and the lowest in the Winter for both members and casual riders.
 
 ### Summarised results
-Let’s go back to the question that was assigned to me: “How do annual members and casual riders use Cyclistic bikes differently? “.
+Let’s go back to the question that was assigned to me: “How do annual members and casual riders use Cyclistic bikes differently?“.
 
 Because we want to convert casual rides into members, we will focus on what makes the casual riders different from the members.
 
@@ -219,7 +219,7 @@ Casual riders:
 * Have an average ride time that is almost twice the one of the members.
 * Have a peak of average ride time from 10 a.m. to 2 p.m.
 * Have the longest ride time and number of rides during the weekend.
-* Have their most frequent stations close to the seaside and parks
+* Have their most frequent stations close to the seaside and parks.
 
 Members:
 * Have half the average ride time of the casual riders.
