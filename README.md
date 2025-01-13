@@ -238,7 +238,7 @@ All these observations confirm my first assumption that members mostly use Cycli
 Not all visualisations have made it to my final dashboard. 
 
 You can find below the full list of visualisations I made during my analysis process:
-* Tables
+* Table
   * Total number of rides
   * Average ride time
   * Average ride time by membership type
@@ -268,7 +268,7 @@ You can find below the full list of visualisations I made during my analysis pro
   * Average ride time by day of the week and by month per membership type
   * Average ride time by day of the week and by season per membership type 
 
-**_Note:_** The line charts could be replaced by bar charts but I personally find the line chart more clear.
+**_Note:_** The line charts could be replaced by bar charts but I personally find the line charts more clear.
 
 ## Act 
 *The Act phase is the time to act on your data. This is when you gather everything that has been learned from your data analysis and put it to use. This usually means providing recommendations to the stakeholders to ensure that they can make data-driven decisions.*
