@@ -153,13 +153,17 @@ The average ride time across all riders is 16 minutes. The members had an averag
 
 My assumption is that members are located close to their workplaces and mostly use Cyclistic to go to work and go back home. Casual riders on the other hand use it mostly for leisure or to do sport. I will try to confirm or infirm my assumption with my analysis.
 
-![image](https://github.com/user-attachments/assets/b51ebaa4-4902-4fb8-be9a-bbefac4c2e1f)
+![image](https://github.com/user-attachments/assets/b51ebaa4-4902-4fb8-be9a-bbefac4c2e1f) ![image](https://github.com/user-attachments/assets/25c32f1a-ecf2-4501-bcff-99734d7f873b)
 
-![image](https://github.com/user-attachments/assets/65594f95-5d4e-4c0b-8321-d890486752e2)
 
-![image](https://github.com/user-attachments/assets/1e72d839-bc33-4810-8360-fb287a9dc95e)
+![image](https://github.com/user-attachments/assets/65594f95-5d4e-4c0b-8321-d890486752e2) ![image](https://github.com/user-attachments/assets/17a423c4-084b-4b46-9153-e764e31c5bcd)
+
+
+![image](https://github.com/user-attachments/assets/1e72d839-bc33-4810-8360-fb287a9dc95e) ![image](https://github.com/user-attachments/assets/bc9b0747-b519-4673-9c4e-30fa529d3dba)
+
 
 ![image](https://github.com/user-attachments/assets/d231e181-de26-4b35-b1f4-d4040d415014)
+
 
 The average ride time for members stays quite steady throughout the hours of the day, weeks, and months. On the other hand, casual riders have a significant growth in ride time between 10 a.m. and 12 p.m., on Saturdays and Sundays, and in the summer months. 
 
@@ -185,21 +189,21 @@ The most used type of vehicle is the classic bike for both members and casual ri
 Two-thirds of the total number of rides were done by members and one-third by casual riders. Either the members are more diligent and ride more often or there are just more members than casual riders or both. Due to the anonymisation process, we have no way of knowing without doing a survey.  My assumption is that there are more members than casual riders and they are more diligent as well.
 
 #### By hour
-![image](https://github.com/user-attachments/assets/9121cdb1-a3bd-4905-a644-278de6ee3f43)
+![image](https://github.com/user-attachments/assets/9121cdb1-a3bd-4905-a644-278de6ee3f43) ![image](https://github.com/user-attachments/assets/bdf9c8db-cdcd-4233-9840-520ea935f5b4)
 
 **_Note:_** For the clarity of the visualisation, the number of rides has been aggregated by hour of the day. For example, all the rides that started between 8 a.m. and 8:59 a.m. will be counted in the 8am peak number. 
 
 If we look at the number of rides per hour of the day for members, we can see that there are two peaks with a first one between 7-9 a.m. and an even bigger one between 4-6 p.m.. For casual riders, however, there is only one peak between 4-6 p.m. We can assume that casual riders use Cyclistic after their work hours to do some activities and visit the parks that we previously mentioned. 
 
 #### By day
-![image](https://github.com/user-attachments/assets/d5969e15-bc6d-40e3-bad5-f26d965d52fb)
+![image](https://github.com/user-attachments/assets/d5969e15-bc6d-40e3-bad5-f26d965d52fb) ![image](https://github.com/user-attachments/assets/f42a2f2f-d7ef-4702-821a-9a4f6e045b58)
 
 The days that have the highest number of rides for members are Wednesday and Thursday whereas it is Saturday and Sunday for casual riders.
 
 The days that have the lowest number of rides for members are Saturday and Sunday whereas it is Monday and Tuesday for casual riders.
 
 #### By month
-![image](https://github.com/user-attachments/assets/3f29e954-45ea-4e6d-90eb-de8ca47a5c8e)
+![image](https://github.com/user-attachments/assets/3f29e954-45ea-4e6d-90eb-de8ca47a5c8e) ![image](https://github.com/user-attachments/assets/5c38df4e-200b-4d42-ae68-4d9519128a0d)
 
 The month where we can see the highest number of rides for members is September whereas it is July for casual members.
 
