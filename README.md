@@ -206,7 +206,7 @@ The days that have the lowest number of rides for members are Saturday and Sunda
 #### By month
 ![image](https://github.com/user-attachments/assets/e1656595-e98b-4bdc-97bf-b0944c354a61) ![image](https://github.com/user-attachments/assets/5c38df4e-200b-4d42-ae68-4d9519128a0d)
 
-The month where we can see the highest number of rides for members is September whereas it is July for casual members.
+The month where we can see the highest number of rides for members is September whereas it is July for casual riders.
 
 The month that has the lowest number of rides for both members and casual riders is January.
 
