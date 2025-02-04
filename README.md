@@ -1,6 +1,6 @@
 # Google Data Analytics: Cyclistic bike-share analysis case study
 ## Introduction
-The Cyclistic case study is one of the two capstone projects in the [Google Data Analytics Professional Certificate](https://www.coursera.org/learn/google-data-analytics-capstone).
+The Cyclistic case study is one of two capstone projects that can be worked on during the [Google Data Analytics Professional Certificate](https://www.coursera.org/learn/google-data-analytics-capstone).
 
 In this documentation, we will go through the following data analysis phases: Ask, Prepare, Process, Analyse, Share and Act. If you want to skip directly to the data visualisations, you can go to: [Cyclistic Case Study Dashboard](https://public.tableau.com/app/profile/sophie.pages/viz/GoogleDataAnalyticsDashboardofCyclisticcasestudy/Dashboard3).
 
