@@ -26,7 +26,7 @@ Although the pricing flexibility helps Cyclistic attract customers, Cyclistic’
 
 The director of marketing, Lily Moreno, believes that the company’s future success depends on maximising the number of annual memberships. Rather than creating a marketing campaign that targets new customers, Moreno believes there is a solid opportunity to convert casual riders into members. 
 
-Lily Moreno has set a clear goal for the marketing analytics team: to design a new marketing strategy to convert casual riders into annual members. But first, Cyclistic executives must approve the recommendations, and they must be backed up with compelling data insights and professional data visualizations.
+Lily Moreno has set a clear goal for the marketing analytics team: to design a new marketing strategy to convert casual riders into annual members. But first, Cyclistic executives must approve the recommendations, and they must be backed up with compelling data insights and professional data visualisations.
 
 Before making recommendations, the marketing analytics team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. The Cyclistic historical bike trip data will be analysed to identify trends.
 
