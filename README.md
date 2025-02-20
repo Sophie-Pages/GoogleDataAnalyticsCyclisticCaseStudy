@@ -59,7 +59,7 @@ The data has been anonymized which means any Personally Identifiable Information
 
 Due to the anonymization process, we will not be able to know which rides are single-ride or full-day passes. The users who purchased these passes are referred to as casual riders without distinction.
 
-We have no information about the circumstances of the trip: was it for work, leisure, or other? We have as well no information about where the users live and if it is close to the stations. 
+We have no information about the circumstances of the trip: was it for work, leisure, or other? We have no information about where the users live and if it is close to the stations. 
 
 Due to those limitations, I recommend to the stakeholders an anonymous survey where we could ask these types of questions and much more:
 Are you an annual member? 
@@ -74,12 +74,12 @@ Why do you usually use Cyclistic?
  🔲 To do sport
  🔲 Other
 
-Where is the closest station from your home? 
+Where is the closest station to your home? 
  🔲 Less than 5 min
  🔲 Between 5 and 15 min
  🔲 More than 15 min
 
-Where is the closest station from your workplace?
+Where is the closest station to your workplace?
  🔲 Less than 5 min
  🔲 Between 5 and 15 min
  🔲 More than 15 min
@@ -139,7 +139,7 @@ Using my initial to-do list that can be found in my [Jupyter Notebook](https://g
 
 When working on this case study, I mostly used visualisations to do the analysis phase. Because of this, I will be showing my analysis steps with those visualisations. 
 
-**_Note:_** Be aware that this is an in-depth analysis. If I were to show my analysis results to the stakeholders, I would do a summarised presentation of these steps or share my Dashboard which found in Tableau here: [Cyclistic Case Study Dashboard](https://public.tableau.com/app/profile/sophie.pages/viz/GoogleDataAnalyticsDashboardofCyclisticcasestudy/Dashboard3).
+**_Note:_** Be aware that this is an in-depth analysis. If I were to show my analysis results to the stakeholders, I would do a summarised presentation of these steps or share my Dashboard which can be found in Tableau here: [Cyclistic Case Study Dashboard](https://public.tableau.com/app/profile/sophie.pages/viz/GoogleDataAnalyticsDashboardofCyclisticcasestudy/Dashboard3).
 
 ### Overview
 After data cleaning and data manipulation, my data has 4084229 rows which means 4084229 trips. About 64% of these trips were done by members. 
@@ -180,21 +180,21 @@ The three most frequent stations are the same if we look at start stations and e
 
 ![image](https://github.com/user-attachments/assets/7ba855f9-4ced-4d4a-94b0-be602ba3487f)
 
-I found three types of vehicles in the data I collected: electric bike, classic bike, and electric scooter. However, in the information provided to me, Cyclistic is said to use reclining bikes, hand tricycles, and cargo bikes. Either that information is outdated or the assistive options are not clearly identified in the dataset. If the information is missing from our dataset or if it was removed during the anonymization process, we could add a question asking if the users use our assistive bikes in the anonymous survey I proposed to the stakeholders.
+I found three types of vehicles in the data I collected: electric bikes, classic bikes, and electric scooters. However, in the information provided to me, Cyclistic is said to use reclining bikes, hand tricycles, and cargo bikes. Either that information is outdated or the assistive options are not clearly identified in the dataset. If the information is missing from our dataset or if it was removed during the anonymization process, we could add a question asking if the users use our assistive bikes in the anonymous survey I proposed to the stakeholders.
 
 The most used type of vehicle is the classic bike for both members and casual riders, followed by the electric bike, and the electric scooter. 
 
 ### Number of rides
 ![image](https://github.com/user-attachments/assets/fc331242-d19e-4b87-a92b-18cc9b6c6ba7)
 
-Two-thirds of the total number of rides were done by members and one-third by casual riders. Either the members are more diligent and ride more often or there are just more members than casual riders or both. Due to the anonymization process, we have no way of knowing without doing a survey.  My assumption is that there are more members than casual riders and they are more diligent as well.
+Two-thirds of the total number of rides were done by members and one-third by casual riders. Either the members are more diligent and ride more often or there are just more members than casual riders or both. Due to the anonymization process, we have no way of knowing without doing a survey.  My assumption is that there are more members than casual riders and they are more diligent.
 
 #### By hour
 ![image](https://github.com/user-attachments/assets/d7efc80d-25e5-4f7b-9c05-5357fcea28f0) ![image](https://github.com/user-attachments/assets/bdf9c8db-cdcd-4233-9840-520ea935f5b4)
 
-**_Note:_** For the clarity of the visualisation, the number of rides has been aggregated by hour of the day. For example, all the rides that started between 8 a.m. and 8:59 a.m. will be counted in the 8am peak number. 
+**_Note:_** For the clarity of the visualisation, the number of rides has been aggregated by hours of the day. For example, all the rides that started between 8 a.m. and 8:59 a.m. will be counted in the 8 a.m. peak number. 
 
-If we look at the number of rides per hour of the day for members, we can see that there are two peaks with a first one between 7-9 a.m. and an even bigger one between 4-6 p.m.. For casual riders, however, there is only one peak between 4-6 p.m. We can assume that casual riders use Cyclistic after their work hours to do some activities and visit the parks that we previously mentioned. 
+If we look at the number of rides per hour of the day for members, we can see that there are two peaks with a first one between 7-9 a.m. and an even bigger one between 4-6 p.m. For casual riders, however, there is only one peak between 4-6 p.m. We can assume that casual riders use Cyclistic after their work hours to do some activities and visit the parks that we previously mentioned. 
 
 #### By day
 ![image](https://github.com/user-attachments/assets/891dc196-9659-496d-a346-5df7a5149de6) ![image](https://github.com/user-attachments/assets/f42a2f2f-d7ef-4702-821a-9a4f6e045b58)
@@ -229,7 +229,7 @@ Casual riders:
 Members:
 * Have half the average ride time of the casual riders.
 * Have a stable average ride time throughout the day.
-* Have a peak of number of rides between 7-9 a.m that casual riders don’t have.
+* Have a peak of number of rides between 7-9 a.m. that casual riders don’t have.
 * Have the most rides on Wednesdays and Thursdays.
 * Have their most frequent stations close to the center of the city, and thus, close to workplaces and commercial areas.
 
@@ -291,10 +291,10 @@ I recommend doing the survey that I talked about previously to understand the re
 #### Marketing campaign ideas
 As casual riders mostly ride during the weekends, the marketing campaign should target Saturdays and Sundays if they plan to use advertising posters. Those advertising posters should be close to the most frequent stations used by casual riders.
 
-Using social media is a must nowadays. Because casual riders are already using Cyclistic, they could be interested in content relating to bikes, health benefits, sports, best places to use Cyclistic, etc. If Cyclistic grows its social media, casual riders will continue to hear about them throughout the months -thus keeping them interested in using Cyclistic- and see the marketing campaign when it launches.
+Using social media is a must nowadays. Because casual riders are already using Cyclistic, they could be interested in content relating to bikes, health benefits, sports, the best places to use Cyclistic, etc. If Cyclistic grows its social media, casual riders will continue to hear about them throughout the months -thus keeping them interested in using Cyclistic- and see the marketing campaign when it launches.
 
 #### Additional idea
-We came to the conclusion that casual riders are active people interested in doing sports or leisure activities. Cyclistic could do partnerships with sports events or gyms to continue to appeal to casual riders and as well appeal to those that haven’t heard about them before.
+We came to the conclusion that casual riders are active people interested in doing sports or leisure activities. Cyclistic could do partnerships with sports events or gyms to continue to appeal to casual riders and appeal to those who haven’t heard about them before.
 
 
 
