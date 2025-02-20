@@ -55,9 +55,9 @@ The data is structured and it is organized into CSV files that go from 2013 to O
 We have been requested to use only the last 12 months of data. Those last months are enough to gather relevant information and make recommendations. But, if we or the stakeholders wanted, we could review the data of the last few years to gather even more information about users and trends.
 
 ### Limitations of the data
-The data has been anonymised which means any Personally Identifiable Information (PII) has been removed to ensure the identities of the users are protected. 
+The data has been anonymized which means any Personally Identifiable Information (PII) has been removed to ensure the identities of the users are protected. 
 
-Due to the anonymisation process, we will not be able to know which rides are single-ride or full-day passes. The users who purchased these passes are referred to as casual riders without distinction.
+Due to the anonymization process, we will not be able to know which rides are single-ride or full-day passes. The users who purchased these passes are referred to as casual riders without distinction.
 
 We have no information about the circumstances of the trip: was it for work, leisure, or other? We have as well no information about where the users live and if it is close to the stations. 
 
@@ -180,14 +180,14 @@ The three most frequent stations are the same if we look at start stations and e
 
 ![image](https://github.com/user-attachments/assets/7ba855f9-4ced-4d4a-94b0-be602ba3487f)
 
-There are three types of vehicles in the data I collected: electric bike, classic bike, and electric scooter. However, in the information provided to me, Cyclistic is said to use reclining bikes, hand tricycles, and cargo bikes. Either that information is outdated or the assistive options are not clearly identified in the dataset. If the information is missing from our dataset or if it was removed during the anonymisation process, we could add a question asking if the users use our assistive bikes in the anonymous survey I proposed to the stakeholders.
+I found three types of vehicles in the data I collected: electric bike, classic bike, and electric scooter. However, in the information provided to me, Cyclistic is said to use reclining bikes, hand tricycles, and cargo bikes. Either that information is outdated or the assistive options are not clearly identified in the dataset. If the information is missing from our dataset or if it was removed during the anonymization process, we could add a question asking if the users use our assistive bikes in the anonymous survey I proposed to the stakeholders.
 
 The most used type of vehicle is the classic bike for both members and casual riders, followed by the electric bike, and the electric scooter. 
 
 ### Number of rides
 ![image](https://github.com/user-attachments/assets/fc331242-d19e-4b87-a92b-18cc9b6c6ba7)
 
-Two-thirds of the total number of rides were done by members and one-third by casual riders. Either the members are more diligent and ride more often or there are just more members than casual riders or both. Due to the anonymisation process, we have no way of knowing without doing a survey.  My assumption is that there are more members than casual riders and they are more diligent as well.
+Two-thirds of the total number of rides were done by members and one-third by casual riders. Either the members are more diligent and ride more often or there are just more members than casual riders or both. Due to the anonymization process, we have no way of knowing without doing a survey.  My assumption is that there are more members than casual riders and they are more diligent as well.
 
 #### By hour
 ![image](https://github.com/user-attachments/assets/d7efc80d-25e5-4f7b-9c05-5357fcea28f0) ![image](https://github.com/user-attachments/assets/bdf9c8db-cdcd-4233-9840-520ea935f5b4)
@@ -294,7 +294,7 @@ As casual riders mostly ride during the weekends, the marketing campaign should 
 Using social media is a must nowadays. Because casual riders are already using Cyclistic, they could be interested in content relating to bikes, health benefits, sports, best places to use Cyclistic, etc. If Cyclistic grows its social media, casual riders will continue to hear about them throughout the months -thus keeping them interested in using Cyclistic- and see the marketing campaign when it launches.
 
 #### Additional idea
-We came to the conclusion that casual riders are active people interested in doing sports or leisure activities. Cylistic could do partnerships with sports events or gyms to continue to appeal to casual riders and as well appeal to those that haven’t heard about them before.
+We came to the conclusion that casual riders are active people interested in doing sports or leisure activities. Cyclistic could do partnerships with sports events or gyms to continue to appeal to casual riders and as well appeal to those that haven’t heard about them before.
 
 
 
